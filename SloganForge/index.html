@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SloganForge | AI-Powered Engineering Taglines</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="hero">
+    <div class="container">
+      <header>
+        <div class="logo">
+          <i class="fas fa-bolt"></i>
+          <span>SloganForge</span>
+        </div>
+      </header>
+
+      <div class="hero-content">
+        <h1>Craft <span>Brilliant</span> Engineering Slogans</h1>
+        <p class="subtitle">AI-powered tagline generation for tech brands, products, and teams</p>
+        
+        <div class="generator-card">
+          <div class="input-group">
+            <label for="industry"><i class="fas fa-industry"></i> Industry</label>
+            <input type="text" id="industry" placeholder="e.g., Robotics, Aerospace, IoT" value="Robotics">
+          </div>
+          
+          <div class="input-group">
+            <label for="tone"><i class="fas fa-paint-brush"></i> Tone</label>
+            <div class="tone-selector">
+              <button class="tone-btn active" data-tone="professional">Professional</button>
+              <button class="tone-btn" data-tone="creative">Creative</button>
+              <button class="tone-btn" data-tone="funny">Funny</button>
+            </div>
+          </div>
+          
+          <button id="generate-btn" class="primary-btn">
+            <span class="btn-text">Generate Slogans</span>
+            <i class="fas fa-magic"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave"></div>
+  </div>
+
+  <main class="container">
+    <section class="results-section" id="output">
+      <div class="section-header">
+        <h2>Your AI-Generated Slogans</h2>
+        <p>Click any slogan to copy it</p>
+      </div>
+      <div class="results-placeholder">
+        <img src="assets/idea.svg" alt="Lightbulb icon" class="placeholder-icon">
+        <p>Your engineering slogans will appear here</p>
+      </div>
+      <div class="slogans-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <i class="fas fa-bolt"></i>
+            <span>SloganForge</span>
+          </div>
+          <p>AI-powered slogan generation for engineers and tech innovators.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SloganForge. </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
